@@ -22,7 +22,7 @@ def fmt_output(symbol,n,shape,data):
             S += r'{:.2f}'.format(M[l]) if C==1 else (r'{:.2f} '+ r'& {:.2f}'*(C-1)).format(*M[l])
             if(l!= L-1):
                 S+=r'\\'
-        S +='\end{bmatrix}, \quad $'if (L!=1 or C!=1) else r', \quad $' 
+        S +='\end{bmatrix}, \quad $ 'if (L!=1 or C!=1) else r', \quad $ ' 
     display(Markdown(S))
 
 #%%
